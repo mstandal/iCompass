@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:iCompass"
+             x:Class="iCompass.MainPage"
+             Style="{StaticResource MainPage}">
+    <StackLayout>
+        <Image Source="needle.png" Style="{StaticResource HeadingGraphic}" Rotation="{Binding HeadingGraphicRotation}"/>       
+        <Frame Style="{StaticResource HeadingFrame}">
+            <Label Text="{Binding HeadingAsText}" Style="{StaticResource HeadingLabel}"/>                       
+        </Frame>        
+        <Frame Style="{StaticResource MenuFrame}">
+            <Switch IsToggled="{Binding IsMonitoring, Mode=TwoWay}"  />
+        </Frame>        
+    </StackLayout>
+</ContentPage>

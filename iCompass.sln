@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCompass.Android", "iCompass\iCompass.Android\iCompass.Android.csproj", "{8164A229-5E92-4338-A902-B01FD6E18661}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iCompass", "iCompass\iCompass\iCompass.csproj", "{70D5ED22-8C9C-49FE-B66E-3A8A435268BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCompassTests", "iCompassTests\iCompassTests.csproj", "{9B5D86CE-EE96-472E-9C93-C3239B000EBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8164A229-5E92-4338-A902-B01FD6E18661}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70D5ED22-8C9C-49FE-B66E-3A8A435268BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D5ED22-8C9C-49FE-B66E-3A8A435268BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D5ED22-8C9C-49FE-B66E-3A8A435268BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D5ED22-8C9C-49FE-B66E-3A8A435268BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5D86CE-EE96-472E-9C93-C3239B000EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5D86CE-EE96-472E-9C93-C3239B000EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5D86CE-EE96-472E-9C93-C3239B000EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5D86CE-EE96-472E-9C93-C3239B000EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBAD9620-5174-4522-9D87-84FA59E253CB}
+	EndGlobalSection
+EndGlobal
