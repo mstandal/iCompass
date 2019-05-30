@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iCompass", "iCompass\iCompa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCompassTests", "iCompassTests\iCompassTests.csproj", "{9B5D86CE-EE96-472E-9C93-C3239B000EBE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17EAA9E5-AA33-4C9D-AE8F-C8D2D65B6A2A}"
+	ProjectSection(SolutionItems) = preProject
+		images\Screenshot_Pixel.png = images\Screenshot_Pixel.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
