@@ -10,8 +10,9 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  buildConfiguration: 'Debug'
+  buildConfiguration: 'Release'
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+  projects: '$(Build.SourcesDirectory)/iCompassTests/*.csproj'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -20,18 +21,16 @@ steps:
   inputs:
     restoreSolution: '**/*.sln'
 
-- task: XamarinAndroid@1
+- task: DotNetCoreCLI@2
+  displayName: Build
   inputs:
-    projectFile: '**/*droid*.csproj'
-    outputDirectory: '$(outputDirectory)'
-    configuration: '$(buildConfiguration)'
+    command: build
+    projects: "$(projects)"
+    arguments: "--configuration $(buildConfiguration)"
 
-- task: VSTest@2
+- task: DotNetCoreCLI@2
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*test*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    command: test
+    projects: "$(projects)"
+    arguments: "--configuration $(buildConfiguration)"
 
